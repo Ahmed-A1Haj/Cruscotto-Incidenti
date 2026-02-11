@@ -10,6 +10,7 @@ namespace Domain.Entities
     public class Origin : BaseEntityId
     {
         public string Name { get; set; }
-        public ICollection<Ambit> Ambits { get; set; }
+        public ICollection<Ambit> Ambits { get; set; } = new List<Ambit>();
+        public ICollection<Incident> Incidents { get; set; } = new HashSet<Incident>();
     }
 }

@@ -9,5 +9,6 @@ namespace Domain.Entities
     public class Scenario
     {
         public string Name { get; set; }
+        public ICollection<Incident> Incidents { get; set; } = new HashSet<Incident>();
     }
 }

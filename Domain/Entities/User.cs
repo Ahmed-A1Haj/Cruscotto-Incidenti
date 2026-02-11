@@ -13,6 +13,6 @@ namespace Domain.Entities
         public string FullName { get; set; }
         public string Email { get; set; }
         public bool IsEnabled { get; set; }
-        public ICollection<Role> Roles { get; set; }
+        public ICollection<Role> Roles { get; set; } = new HashSet<Role>();
     }
 }

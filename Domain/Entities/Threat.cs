@@ -10,5 +10,6 @@ namespace Domain.Entities
     public class Threat : BaseEntityId
     {
         public string Name { get; set; }
+        public ICollection<Incident> Incidents { get; set; } = new HashSet<Incident>();
     }
 }
